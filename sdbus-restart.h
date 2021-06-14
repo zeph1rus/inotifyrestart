@@ -1,0 +1,2 @@
+int restart_service(char* service_name);
+char *help_string = "-p <path> - Path to director to watch\n-f <filename> - filename of file in directory to watch\n-s <servicename> Systemd service name of service to restart\n";
