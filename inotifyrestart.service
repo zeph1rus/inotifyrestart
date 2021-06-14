@@ -1,0 +1,9 @@
+[Unit]
+Description=inotifyrestart
+
+[Service]
+ExecStart=/usr/local/bin/inrestart -p INPATH -f INFILE -s INSERVICE
+ExecStop=pgrep -f inrestart | xargs kill
+
+[Install]
+WantedBy=multi-user.target
